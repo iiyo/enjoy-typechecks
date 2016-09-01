@@ -1,0 +1,28 @@
+{
+  "name": "enjoy-typechecks",
+  "version": "1.0.0",
+  "description": "Predicate functions for checking JavaScript and enjoy.js types",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "cd tests/ && mocha ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iiyo/enjoy-typechecks.git"
+  },
+  "keywords": [
+    "typechecks",
+    "predicate",
+    "functions",
+    "types"
+  ],
+  "author": "J. Steinbeck",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/iiyo/enjoy-typechecks/issues"
+  },
+  "homepage": "https://github.com/iiyo/enjoy-typechecks#readme"
+}
