@@ -67,13 +67,13 @@ describe("enjoy-typechecks", function () {
             
             [
                [], [1, 2, 3], [{}], ["foo", "bar"], [1, "foo", [], {}],
-               arguments, {length: 2}, "foo"
+               arguments, {0: 1, 1: 2, length: 2}, "foo"
             ].forEach(function (value) {
                 assert(isArrayLike(value) === true, "isArrayLike(" + value + ")");
             });
             
             [
-                null, true, false, {}, {a: 1, b: 2}, /^abc/,
+                null, true, false, {}, {a: 1, b: 2}, /^abc/, {length: 5},
                 0.23, 0.000000000001, 22.222, -123.123213, NaN, undefined
             ].forEach(function (value) {
                 assert(isArrayLike(value) === false, "!isArrayLike(" + value + ")");

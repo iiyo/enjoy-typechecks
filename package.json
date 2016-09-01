@@ -1,6 +1,6 @@
 {
   "name": "enjoy-typechecks",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Predicate functions for checking JavaScript and enjoy.js types",
   "main": "index.js",
   "directories": {

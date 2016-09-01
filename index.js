@@ -74,7 +74,12 @@ function isArray (a) {
 }
 
 function isArrayLike (a) {
-    return (isString(a) || (isObject(a) && "length" in a));
+    return (isArray(a) || isString(a) || (
+        isObject(a) && ("length" in a) && isFiniteNumber(a.length) && (
+            (a.length > 0 && (a.length - 1) in a) ||
+            (a.length === 0)
+        )
+    ));
 }
 
 function isFunction (a) {
